@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
+    min-height: 11vh;
     font-size: 12px;
 }
 
@@ -16,7 +17,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 18%;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .nav-links li{
@@ -28,7 +29,7 @@ nav{
     color: #0f0f0f;
 }
 .button a{
-    background-color: dodgerblue;
+    background-color: rgb(49, 121, 255);
     color: white;
     padding: 7px 12px 7px 12px;
     font-weight: bold;
@@ -36,27 +37,35 @@ nav{
 }
 .brand{
     text-align: center;
-    margin-top: 7%;
+    margin-top: 6.6%;
 }
 
 .brand input{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
     border-radius: 30px;
     width: 42%;
     min-height: 7.5vh;
-    border: 1px solid silver;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: #fff;
+    outline: none;
 }
+
+.brand input:hover, input:focus{
+    box-shadow: 1px 1px 6px #d3d3d3;
+}
+
 .brand button{
     margin: 5px;
-    padding: 10px;
-    min-height: 7vh;
+    padding: 6px 12px 6px 12px;
+    min-height: 6.6vh;
     text-align: center;
     font-size: 14px;
     background-color: #f1f1f1;
     border: none;
-    color:darkslategray;
+    color:rgb(109, 109, 109);
 }
 .brand button:hover{
     border: 1px solid silver;
@@ -66,4 +75,26 @@ nav{
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 12px;
+}
+footer{
+    background-color: #ececec;
+    min-height: 50px;
+    color: #8d8d8d;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    padding: 10px 10px 10px 10px; 
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px 10px 10px 10px; 
+    list-style: none;
+}
+hr{
+    color: #e9e9e9;
 }
