@@ -16,12 +16,13 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 18%;
+    width: auto;
     margin-right: 20px;
 }
 
 li{
     list-style: none;
+    padding: 1em;
 }
 
 .nav-links a{
@@ -44,10 +45,10 @@ li{
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 7px 40px 7px 40px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
     width: 42%;
-    min-height: 3em;
+    min-height: 3.3em;
     border: 1px solid rgb(219, 219, 219);
     outline: none;
     background-color: #fff;
@@ -55,6 +56,7 @@ li{
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: 15px 14px;
+    
 }
 
 .brand input:hover, input:focus{
@@ -64,7 +66,7 @@ li{
 .brand button{
     margin: 5px;
     padding: 6px 12px 6px 12px;
-    min-height: 6.6vh;
+    height: 2.6em;
     text-align: center;
     font-size: 14px;
     background-color: #f1f1f1;
@@ -81,29 +83,26 @@ li{
     font-size: 12px;
 }
 footer{
-    background-color: #ececec;
-    min-height: 50px;
+    background-color: #eeeeee;
     color: rgba(0,0,0,.54);
     font-size: 14px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    display: flex;
+    justify-items: center;
 }
 .flinks {
+    padding: 3px;
     width: 100%;
-    margin: 30px;
     display: flex;
     justify-content: space-between;
 }
-.flink1{
-    width: 50%;
-    align-items: right;
+.flink1 ul{
     display: flex;
-    justify-content: space-around;
+    float: left;
 }
-.flink2{
-    width: 30%;
-    align-items: left;
+.flink2 ul{
     display: flex;
-    justify-content: space-around;
+    float: right;
 }
